@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+    <title> Local government results </title>
+    </head>
+    <body>
+        <h1>Local Government results </h1>
+        <hr>
+        <a href=" {% url 'school:unit8' %}"> View polling unit results </a>
+        {% if local %}
+        <div>
+            <table border= '4' pad = '12' >
+                <tr>
+                    <th>lga name </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for result in local %}
+                    <td> {{ result.lga_name }} </td>
+                    <td> {{ result.party_abbreviation }} </td>
+                    <td> {{ result.party_score }} </td>
+                    <td> {{ result.}} </td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            Not available
+        </div>
+        {% endif %}
+    </body>
+</html> 

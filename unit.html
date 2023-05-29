@@ -1,0 +1,436 @@
+<!Doctype html>
+<html>
+    <head>
+        {% load static %}
+        <link rel ="stylesheet" href="{% static 'prac.css' %}">
+
+        <title> polling units results </title>
+    </head>
+    <div class ='header'>
+    <header>
+        <img src="{% static 'head.jpeg' %}">
+    </header>
+    <div > Local government announced results 
+    </div>
+</div>
+    <body>
+        <h1 class='header'> <marquee> Bincom interview question </marquee> </h1>
+        <hr>
+        {% if poll8 %}
+        <div class='container'>
+            <div class='item'>
+                <table border= '4' pad = '12' >
+                    <caption border = 4> Polling 8 </caption>
+                    <tr>
+                        <th>Polling unit id </th>
+                        <th> Party Abbreviation </th>
+                        <th> Party score </th>
+                    </tr>
+                    <tr>
+                        {% for poll in poll8 %}
+                        <td> {{ poll.polling_unit_uniqueid }} </td>
+                        <td> {{ poll.party_abbreviation }} </td>
+                        <td> {{ poll.party_score }} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+           
+                {% else %}
+                Not available
+            {% endif %}
+           
+            {% if poll9 %}
+        </div>
+            <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 9 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll9 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+        
+        {% endif %}
+        {% if poll10 %}
+    </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 10 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll10 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+        
+        {% endif %}
+        {% if poll11 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 11 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll11 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            Not available
+        {% endif %}
+       
+        {% if poll12 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 12 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll12 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+        
+        {% endif %}
+        {% if poll13 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 13 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll13 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+       
+        {% endif %}
+        {% if poll15 %}
+        </div>            
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 15 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll15 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+   
+        {% endif %}
+        {% if poll16 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 16</caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll16 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+        
+        {% endif %}
+        {% if poll18 %}
+    </div>
+    <div class='item'>
+      
+            <table border= '4' pad = '12' >
+                <caption> Polling 18 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll18 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+     
+        {% endif %}
+        {% if poll19 %}
+        </div>
+            <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 19</caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll19 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+    
+        {% endif %}
+        {% if poll20 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 20 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll20 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+      
+        {% endif %}
+         {% if poll21 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 21 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll21 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+        {% endif %}
+        {% if poll22 %}
+        </div>
+        <div =class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 22 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll22 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+     
+        {% endif %}
+        {% if poll23 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 23 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll23 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+  
+        {% endif %}
+        {% if poll24 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 24 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll24 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+      
+        {% endif %}
+        {% if poll25 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 25 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll25 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+    
+        {% endif %}
+        {% if poll26 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 26 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll26 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+    
+        {% endif %}
+        {% if poll27 %}
+        </div>
+        <div class='item'>
+            <table border= '4' pad = '12' >
+                <caption> Polling 27 </caption>
+                <tr>
+                    <th>Polling unit id </th>
+                    <th> Party Abbreviation </th>
+                    <th> Party score </th>
+                </tr>
+                <tr>
+                    {% for poll in poll27 %}
+                    <td> {{ poll.polling_unit_uniqueid }} </td>
+                    <td> {{ poll.party_abbreviation }} </td>
+                    <td> {{ poll.party_score }} </td>
+                </tr>
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            Not available
+   
+        {% endif %}
+        </div>
+    <p> I am testting what i am learning. In order to be better in django. i nedd css too</p>
+    </body>
+</html> 
